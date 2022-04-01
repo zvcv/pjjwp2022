@@ -23,7 +23,11 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><input class="loginbtn" type="submit" value="login" name="xuid"></td>
+                    <td>
+                        <a href="uiuxcssmain.php">
+                            <input class="loginbtn" type="submit" value="login" name="xuid">
+                        </a>
+                    </td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
