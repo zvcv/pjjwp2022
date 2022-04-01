@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Belajar Web App - Diklat I - 2022</title>
-    <link rel="icon" href="images/icon.png">
+    <link rel="icon" href="../images/icon.png">
 </head>
 <body>
     

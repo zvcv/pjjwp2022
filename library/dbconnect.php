@@ -9,7 +9,7 @@ use LDAP\Result;
         $host = "localhost";
         $user = "root";
         $pass = "";
-        $db = "movierental"; // ------------------------------ DB yang mau ditarik
+        $db = "weblearning"; // ------------------------------ DB yang mau ditarik
         // -----------------------------------------------------------------------
 
         // ----------------------------------- request connection to server and DB

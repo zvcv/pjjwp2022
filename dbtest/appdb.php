@@ -1,6 +1,6 @@
 <?php
 
-    include "library/dbconnect.php"; // ----------------- tergantung lokasi DB nya
+    include "../library/dbconnect.php"; // ----------------- tergantung lokasi DB nya
 
     $sql = "SELECT * FROM tablemovie";
     $result = runsqltext($sql);

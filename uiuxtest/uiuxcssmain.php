@@ -3,7 +3,7 @@
 <head>
     <title>Belajar Web App I</title>
 
-    <link rel="stylesheet" type="text/css" href="library/common1.css">
+    <link rel="stylesheet" type="text/css" href="../library/common1.css">
 </head>
 <body>
 
