@@ -1,17 +1,24 @@
+<!--
+Tugas UI UX
+Husni A Ulinnuha
+PJJ Pemrograman Web I 2022
+Pusdiklat Keuangan Umum
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
 
     <title>Husni A Ulinnuha | Tugas UI UX</title>
 
-    <link rel="icon" href="https://cdn-icons.flaticon.com/png/512/4284/premium/4284504.png?token=exp=1648801215~hmac=c367dd0aea6cc071876e39d8357cdfbb">
-    <!-- <a href="https://www.flaticon.com/free-icons/ecology-and-environment" title="ecology-and-environment icons">Ecology-and-environment icons created by Freepik - Flaticon</a> -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/840/840523.png">
+    <!-- <a href="https://www.flaticon.com/free-icons/nuclear" title="nuclear icons">Nuclear icons created by Freepik - Flaticon</a> -->
 
-    <link rel="stylesheet" href="lib/login.css">
+    <link rel="stylesheet" href="lib/loginpage.css">
 
 </head>
 <body>
-    
+
     <div class="loginbox">
 
         <div class="loginboxleft">
@@ -37,7 +44,7 @@
                         <a href="https://www.flaticon.com/free-sticker/digital-painting_4359906" title="computer stickers" target="_blank">Computer stickers created by Stickers - Flaticon</a>
                     </td>
                 </tr>
-                
+
                 <tr>
                     <td>&nbsp;</td>
                 </tr>
@@ -49,36 +56,47 @@
         <div class="loginboxright">
 
             <div class="signinbox">
-                
+
                 <div class="signin-msg">
                     Welcome to Tugas UI UX
                 </div>
-                
-                <div class="logbox">
 
-                    <div class="textbox">
-                        <input type="text" placeholder="Username">
+                <form method="POST" action="mainpage.php">
+
+                    <div class="logbox">
+
+                        <div class="textbox">
+                            <input name="xuser" type="text" placeholder="Username">
+                        </div>
+
+                        <div class="textbox">
+                            <input name="xpass" type="password" placeholder="Password">
+                        </div>
+
+                        <div class="forgot">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+
+                        <a href="mainpage.php"><input class="logbtn" type="submit" value="Sign in"></a>
+
                     </div>
 
-                    <div class="textbox">
-                        <input type="password" placeholder="Password">
-                    </div>
-
-                </div>
-
-                <div class="forgot">
-                    <a href="#">Forgot Password?</a>
-                </div>
-
-                <a href="home.php"><input class="logbtn" type="button" value="Sign in"></a>
+                </form>
 
             </div>
         </div>
     </div>
 
-    <div class="footer">
+    <div class="footerx">
         Husni A Ulinnuha | 2022
     </div>
 
 </body>
 </html>
+
+<!--
+Tugas UI UX
+Husni A Ulinnuha
+PJJ Pemrograman Web I 2022
+Pusdiklat Keuangan Umum
+-->
