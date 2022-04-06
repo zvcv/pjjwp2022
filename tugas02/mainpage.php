@@ -88,7 +88,8 @@ Pusdiklat Keuangan Umum
 
         <div class="contentleft">
             <div class="leftimg">
-                <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/742/441/847.jpg" alt="" width="250px">
+                <img src="https://img.freepik.com/free-vector/cinema-films-festival-poster_8071-4498.jpg" alt="" height="250px">
+                <!-- <caption><a href="https://www.freepik.com/premium-vector/cinema-films-festival-poster_14323709.htm">Cinema films festival poster Premium Vector created by user4468087 - freepik</a></caption> -->
             </div>
         </div>
         <div class="contentright">

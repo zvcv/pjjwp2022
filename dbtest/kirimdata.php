@@ -6,7 +6,12 @@
     <body>
 
         <div>
+        
+        <!-- method bisa diganti dengan POST atau GET, script PHP harus disesuaikan -->
+		<!-- action bisa diganti dengan terimadata.php atau menggunakan PHP_SELF -->
+
         <form method="POST" action="terimadata.php">
+        <!-- <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" > -->
             <table border="0">
                 <tr>
                     <td>User ID: </td>
@@ -25,7 +30,9 @@
 
         </div>
 
-        <!-- <?php
+        <!-- gunakan php script dibawah ini jika menggunakan PHP_SELF -->
+        <!--
+        <?php
             
             if (isset($_POST["xuid"]) && isset($_POST["xpsw"])) {
                 $uid = $_GET["xuid"];
@@ -35,7 +42,8 @@
                 echo "Password " . $psw;
             }
 
-        ?> -->
+        ?>
+        -->
         
     </body>
     </html>

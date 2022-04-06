@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <title>Belajar Web App I</title>
 
     <link rel="stylesheet" type="text/css" href="../library/common1.css">
+    
 </head>
 <body>
 
@@ -39,7 +41,7 @@
                         <li><a href="#">Email</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Sign Out</a></li>
             </ul>
         </div>
 
