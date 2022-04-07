@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `tablecustomer` (
   PRIMARY KEY (`CUSTID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- Dumping data for table weblearning.tablecustomer: ~1 rows (approximately)
+-- Dumping data for table weblearning.tablecustomer: ~2 rows (approximately)
 DELETE FROM `tablecustomer`;
 INSERT INTO `tablecustomer` (`CUSTID`, `CUSTNAME`, `CUSTADDR`) VALUES
 	('12345', 'John Doe', 'Sesame St');
@@ -33,14 +33,18 @@ CREATE TABLE IF NOT EXISTS `tablemovie` (
   `MOVIENAME` varchar(150) DEFAULT NULL,
   `MOVIEGENRE` varchar(50) DEFAULT NULL,
   `MOVIEPRICE` double(22,0) DEFAULT NULL,
+  `MOVIEIMG` varchar(300) DEFAULT NULL,
   PRIMARY KEY (`MOVIEID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- Dumping data for table weblearning.tablemovie: ~2 rows (approximately)
+-- Dumping data for table weblearning.tablemovie: ~5 rows (approximately)
 DELETE FROM `tablemovie`;
-INSERT INTO `tablemovie` (`MOVIEID`, `MOVIENAME`, `MOVIEGENRE`, `MOVIEPRICE`) VALUES
-	('12345', 'Inception', 'Action', 25000),
-	('23456', 'Interstellar', 'Action', 25000);
+INSERT INTO `tablemovie` (`MOVIEID`, `MOVIENAME`, `MOVIEGENRE`, `MOVIEPRICE`, `MOVIEIMG`) VALUES
+	('0540EDC135EFB7246E6F22CBB3E0A4B7', 'Dunkirk', 'War', 25000, NULL),
+	('12345', 'Inception', 'Action', 25000, NULL),
+	('23456', 'Interstellar', 'Sci Fi', 25000, NULL),
+	('A4B2CB1A553A651553883877AAEFBD30', 'Tenet', 'Sci Fi', 25000, NULL),
+	('B56B9F684F033ACEE8227AF01ACBAA13', 'The Prestige', 'Thriller', 25000, NULL);
 
 -- Dumping structure for table weblearning.tabletrxdetail
 CREATE TABLE IF NOT EXISTS `tabletrxdetail` (
