@@ -86,7 +86,7 @@
         ?>
         -->
         <div id="maindisplay">
-            Hello, <?php echo $_SESSION["user"]; ?> !<br>Welcome to the Clubb!<br>
+            Hello, <?php echo $_SESSION["user"]; ?>!<br>Welcome to the Clubb!<br>
         </div>
         
     </div>
