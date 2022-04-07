@@ -25,8 +25,8 @@
 				<thead>
 					<tr>
 						<td>#</td>
+						<td>Movie</td>
 						<td>Title</td>
-						<td>Genre</td>
 						<td align='right'>Rent Price</td>
 					</tr>
 				</thead>
@@ -34,11 +34,16 @@
 			 ";
 		
 		while ($row = mysqli_fetch_row($res)) {
+			if (!is_null($row[4])) {
+				$pic = "<img src='../movieimg/".$row[4]." width='100px'/>";
+			} else {
+				$pic = "No Picture";
+			}
 			echo "
 				 <tr>
 					<td width='20px'><input type='radio' name='rdoMovie' value=".$row[0]." /></td>
-					<td>".$row[1]."</td>
-					<td>".$row[2]."</td>
+					<td>".$pic."</td>
+					<td><b>".$row[1]."</b><br>Genre: ".$row[2]."</td>
 					<td align='right'>".$row[3]."</td>
 				 </tr>
 				 ";

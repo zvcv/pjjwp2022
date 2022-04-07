@@ -193,6 +193,7 @@ function prosesMovie(opt,e) {
 			var namamovie = document.getElementById("movienameA").value;
 			var genre = document.getElementById("moviegenreA").value;
 			var price = document.getElementById("moviepriceA").value;
+			var files = $('#moviefileA')[0].files;
 			
 			if (namamovie == "") {
 				alert ("bruh what's the title");
@@ -202,32 +203,46 @@ function prosesMovie(opt,e) {
 				} else {
 					if (price == "") {
 						alert ("what's the rent price?");
-					} else {						
+					} else {
+						if (files.length <= 0) {
+							alert ("where's the poster at")
+						} else {
+
+							var fd = new FormData();
+							fd.append('a',namamovie);
+							fd.append('b',genre);
+							fd.append('c',price);
+							fd.append('file',files[0]);
 						
-						var myurl = "jqtest/jqaddmovie.php";
-						var params = {a:namamovie,b:genre,c:price};
-						$.ajax({
-							url: myurl,
-							type: "GET",
-							data: params,
-							success: function(data) {
-								var res = data.trim().replace(/[\n\r]/g, "");
-								if (res == "1") {
-									//----display data yg sudah diadd ke dalam list
-									alert ("movie data saved");
-									$("#pnlMovieAdd").css("display","none");
-									bListMovie();
-								} else {
-									alert ("fail to save movie data");
+							var myurl = "jqtest/jqaddmovie.php";
+							// var params = {a:namamovie,b:genre,c:price};
+
+							$.ajax({
+								url: myurl,
+								type: "POST",
+								data: fd,
+								contentType: false,
+								processDate: false,
+								success: function(data) {
+									var res = data.trim().replace(/[\n\r]/g, "");
+									if (res == "1") {
+										//----display data yg sudah diadd ke dalam list
+										alert ("movie data saved");
+										$("#pnlMovieAdd").css("display","none");
+										bListMovie();
+									} else {
+										alert ("fail to save movie data");
+									}
+								},
+								error: function(err) {
+									alert(err);
 								}
-							},
-							error: function(err) {
-								alert(err);
-							}
-						});
-						e.preventDefault();
-						e.stopImmediatePropagation();
-						return false;   
+							});
+							e.preventDefault();
+							e.stopImmediatePropagation();
+							return false;   
+
+						}
 						
 					}						
 				}				

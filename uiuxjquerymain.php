@@ -119,6 +119,10 @@
                 <td><input type="text" id="moviepriceA" /></td>
             </tr>
             <tr>
+                <td>Picture:</td>
+                <td><input type="file" id="moviefileA" name="moviefileA"/></td>
+            </tr>
+            <tr>
                 <td>&nbsp;</td>
                 <td><input type="button" id="bmovieadd" value="Simpan" class="btnClick" /></td>
             </tr>
