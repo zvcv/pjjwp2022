@@ -4,3 +4,5 @@
 ## file yang dibuka adalah uiuxjquery.php
 
 ayyy yoooo
+
+git clone test
